@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+body {
+    background-color: #f1f1f1;
+    color: #0f141e;
+
+   /* font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;*/
+
+    font: normal 16px 'Roboto', sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+a:active {
+color:red;
+}
+
+a:visited {
+color:grey;
+
+}
+
+/* для ID это решетка, для class - это точка!!! class - могут быть несколько объектов, id - только один!!*/
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.8)
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+@media (max-width:700px) {
+.info {
+    display: block;
+    text-align: center;
+}
+}
+
+.info p {
+color: #86898f;
+margin: 0px;
+font-style: italic;
+font-weight: bold;
+text-decoration: none;
+
+/* text-transform: uppercase; */
+/* letter-spacing: 15px; */
+/* word-spacing: 42px; */
+}
+/*#ava {
+    border-radius: 50%  
+}*/
+/* 
+.social {
+    background: green;
+    padding: 15px 40px;
+    border: 5px solid red;
+    margin: 20px;
+    border-bottom-style: double;
+    border-right-color: blue;
+} */
+
+.container {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* .box-model div{
+    float:left;
+background: black;
+height: 200px;
+border: 4px solid red;
+width: 25%;
+box-sizing: border-box;
+
+} */
+.bg-yellow{
+background: #fff9dc;
+
+}
+.bg-green{
+    background: #e5ffe7;
+    
+    }
+.bg-red{
+        background: #ffe5e5;
+        
+        }
+.card {
+padding: 15px 20px;
+margin-bottom: 20px;
+border-radius: 20px;
+}
+
+.card h2 {
+margin-bottom: 10px;
+}
+
+.list {
+padding: 0px 20px;
+}
+
+.list li {
+margin-bottom: 10px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(2), td:nth-child(3){
+    color: grey;
+}
+
+/* .table tr:nth-child(odd or even){ 
+    background-color: red;
+} */
+
+.link-list {
+list-style: url("apple.png");
+}
+
+.link-list li {
+padding: 5px;
+}
+
+.contact h2{
+    text-align: center;
+}
+
+.form-group label {
+display: block;
+font-size: 14px;
+color:grey;
+}
+
+.form-group input,
+.form-group textarea {
+width: 100%;
+box-sizing: border-box;
+border: none;
+background: transparent;
+border-bottom: 1px solid grey;
+color: black;
+padding: 15px 0px 10px;
+outline: none;
+font-family: inherit;
+}
+
+.row {
+display: flex;
+margin-bottom: 20px;
+}
+
+.row > .form-group {
+width:50%;
+margin-right: 20px;
+
+}
+
+.row > .form-group:last-child{
+    margin-right: 0;
+}
+
+.btn {
+background:black;
+padding: 15px 20px;
+color: white;
+font-family: inherit;
+cursor: pointer;
+}
+.btn:hover {
+opacity: 0.8;
+
+}
+
+.position{
+    position: relative;
+border: 4px solid black;
+margin-top: 40px;
+padding: 20px;
+height: 300px;
+}
+
+.box {
+    position:fixed;
+    top:600px;
+    right: 50px;
+    width:50px;
+    height: 50px;
+    background: lightcoral;
+    border-radius: 50px;
